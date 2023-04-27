@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
   <head>
     <style>
@@ -25,29 +25,85 @@
       li a:hover {
         background-color: #ddd;
       }
+      #searchInput {
+        width: 100%;
+        padding: 6px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+      .dark-mode {
+        background-color: #333;
+        color: #fff;
+      }
+      .dark-mode a {
+        background-color: #444;
+      }
     </style>
   </head>
   <body>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <label>
+      <input type="checkbox" id="darkModeToggle">
+      Dark mode
+    </label>
     <ul>
-      <li><a href="https://downdetector.com/" target="_blank">Website/Internet/Cell outages</a></li>
-      <li><a href="https://www.thousandeyes.com/outages" target="_blank">Internet outages</a></li>
-      <li><a href="https://twitter.com/netblocks" target="_blank">Netblocks Twitter</a></li>
-      <li><a href="https://poweroutage.com/" target="_blank">Power outages</a></li>
-      <li><a href="https://cityprotect.com/" target="_blank">CityProtect</a></li>
-      <li><a href="https://www.fhwa.dot.gov/trafficinfo/" target="_blank">Road Closures and Traffic</a></li>
-      <li><a href="https://www.fly.faa.gov/flyfaa/usmap.jsp" target="_blank">Airport Status</a></li>
-      <li><a href="https://www.aarp.org/politics-society/government-elections/info-2020/coronavirus-state-restrictions.html" target="_blank">Covid Restrictions by State</a></li>
-      <li><a href="https://www.cnn.com/travel/article/us-state-travel-restrictions-covid-19/index.html" target="_blank">Covid Travel Restrictions by State</a></li>
-      <li><a href="https://www.opm.gov/policy-data-oversight/snow-dismissal-procedures/current-status/" target="_blank">US Fed. Gov't Office Closures/Status</a></li>
-      <li><a href="https://acleddata.com/analysis/covid-19-disorder-tracker/" target="_blank">Covid Protest Disorder Tracker</a></li>
-      <li><a href="https://acleddata.com/special-projects/us-crisis-monitor/" target="_blank">US Crisis Data</a></li>
-      <li><a href="https://www.broadcastify.com/listen/" target="_blank">Broadcastify</a></li>
-      <li><a href="https://www.flightradar24.com/47.69,-8.66/" target="_blank">FlightRadar24</a></li>
-      <li><a href="https://globe.adsbexchange.com/" target="_blank">ADS-BExchange</a></li>
-      <li><a href="https://acleddata.com/dashboard/#/dashboard" target="_blank">The Armed Conflict Location & Event Data Project - Dashboard</a></li>
-      <li><a href="https://www.vesselfinder.com/" target="_blank">Ship/Vessel Tracking</a></li>
+       <h3>Outages & Disruptions</h3>
+    <ul>
+      <li><a href="https://downdetector.com/" target="_blank" title="Monitor website, internet, and cell outages">Website/Internet/Cell outages</a></li>
+      <li><a href="https://www.thousandeyes.com/outages" target="_blank" title="Monitor internet outages">Internet outages</a></li>
+      <li><a href="https://twitter.com/netblocks" target="_blank" title="Track network disruptions and shutdowns on Netblocks Twitter">Netblocks Twitter</a></li>
+      <li><a href="https://poweroutage.com/" target="_blank" title="Monitor power outages across the United States">Power outages</a></li>
+      <li><a href="https://www.gasbuddy.com/" target="_blank" title="Find the cheapest gas prices nearby and report gas shortages">GasBuddy</a></li>
     </ul>
-    <script>
 
+    <h3>Transportation & Travel</h3>
+    <ul>
+      <li><a href="https://www.fhwa.dot.gov/trafficinfo/" target="_blank" title="Access information on road closures and traffic">Road Closures and Traffic</a></li>
+      <li><a href="https://www.fly.faa.gov/flyfaa/usmap.jsp" target="_blank" title="Check airport status across the United States">Airport Status</a></li>
+      <li><a href="https://www.aarp.org/politics-society/government-elections/info-2020/coronavirus-state-restrictions.html" target="_blank" title="View Covid restrictions by state">Covid Restrictions by State</a></li>
+      <li><a href="https://www.cnn.com/travel/article/us-state-travel-restrictions-covid-19/index.html" target="_blank" title="View Covid travel restrictions by state">Covid Travel Restrictions by State</a></li>
+      <li><a href="https://www.vesselfinder.com/" target="_blank" title="Track ships and vessels in real-time">Ship/Vessel Tracking - Real time</a></li>
+	  <li><a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/" target="_blank" title="U.S. Department of State - Travel Advisories">U.S. Department of State - Travel Advisories</a></li>
+      <!-- Add more transportation & travel links here -->
+    </ul>
+
+    <h3>Weather & Natural Disasters</h3>
+    <ul>
+      <li><a href="https://www.weather.gov/" target="_blank" title="Access official weather forecasts, warnings, and meteorological information">National Weather Service</a></li>
+      <li><a href="https://fsapps.nwcg.gov/afm/" target="_blank" title="View real-time information and maps of active wildfires">Active Fire Mapping Program</a></li>
+      <li><a href="https://earthquake-report.com/" target="_blank" title="Access real-time earthquake data and reports">Earthquake Report</a></li>
+      <li><a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html" target="_blank" title="Locate nearby open shelters during emergencies">Red Cross Shelter Finder</a></li>
+      <li><a href="https://www.fema.gov/disasters/" target="_blank" title="View current disaster declarations and federal assistance">FEMA Disaster Declarations</a></li>
+      <li><a href="https://www.gdacs.org/" target="_blank" title="Get real-time alerts and coordination for natural disasters and emergencies">GDACS</a></li>
+	  <li><a href="https://www.nhc.noaa.gov/" target="_blank" title="National Hurricane Center">National Hurricane Center</a></li>
+            <li><a href="https://www.noaa.gov/" target="_blank" title="National Oceanic and Atmospheric Administration">National Oceanic and Atmospheric Administration</a></li>
+      <li><a href="https://www.usgs.gov/" target="_blank" title="U.S. Geological Survey">U.S. Geological Survey</a></li>
+      <!-- Add more weather-related links here -->
+    </ul>
+<h3>Public Health & Safety</h3>
+<ul>
+  <li><a href="https://www.opm.gov/policy-data-oversight/snow-dismissal-procedures/current-status/" target="_blank" title="Check the status of US federal government office closures">US Fed. Gov't Office Closures/Status</a></li>
+  <li><a href="https://acleddata.com/analysis/covid-19-disorder-tracker/" target="_blank" title="Track Covid protest disorder events">Covid Protest Disorder Tracker</a></li>
+  <li><a href="https://www.cdc.gov/" target="_blank" title="Access the latest information on public health, disease outbreaks, and safety guidelines">CDC</a></li>
+  <li><a href="https://www.amberalert.gov/" target="_blank" title="Amber Alert">Amber Alert</a></li>
+      <!-- Add more public health & safety links here -->
+</ul>
+
+<h3>Monitoring & Reporting</h3>
+<ul>
+  <li><a href="https://cityprotect.com/" target="_blank" title="View and set alerts on crimes in any area of the United States">CityProtect</a></li>
+  <li><a href="https://www.broadcastify.com/listen/" target="_blank" title="Listen live to police, fire, EMS, aviation, and rail audio feeds">Broadcastify</a></li>
+  <li><a href="https://www.flightradar24.com/47.69,-8.66/" target="_blank" title="Monitor real-time flight and air traffic">FlightRadar24</a></li>
+  <li><a href="https://globe.adsbexchange.com/" target="_blank" title="Monitor real-time flight activity for free">ADS-BExchange</a></li>
+</ul>
+
+<h3>Conflicts & Crisis Data</h3>
+<ul>
+  <li><a href="https://acleddata.com/dashboard/#/dashboard" target="_blank" title="View the Armed Conflict Location & Event Data Project dashboard">The Armed Conflict Location & Event Data Project - Dashboard</a></li>
+  <li><a href="https://acleddata.com/special-projects/us-crisis-monitor/" target="_blank" title="Access US crisis data">US Crisis Data</a></li>
+</ul>
+	</ul>
+   <script src="popup.js"></script>
   </body>
 </html>
+
